@@ -1,4 +1,4 @@
-#include <sys/shm.h>
+﻿#include <sys/shm.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/sem.h>
@@ -30,10 +30,6 @@ int main(){
 	biscoitos = shmat(idMem, 0, 0);
 	
 	*biscoitos = 50;
-	
-	//printf("%d", *biscoitos);
-	
-	//shmctl(idMem, IPC_RMID, NULL);
 	
 	if ((sem1 = semget(100, 1, IPC_CREAT|0666)) == -1){
 		perror("Erro do semget"); exit(0);
@@ -67,9 +63,4 @@ int main(){
 		exit(0);
 	}
 	
-	/*
-	for(;;){
-	
-	}*/
-
 }

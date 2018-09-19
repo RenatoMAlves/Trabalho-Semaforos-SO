@@ -1,4 +1,4 @@
-#include <sys/shm.h>
+﻿#include <sys/shm.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/sem.h>
@@ -33,7 +33,7 @@ int main(){
 
 	for(;;){
 		semop(sem2, &P, 1);
-        *biscoitos = 50;
+        	*biscoitos = 50;
 		puts("Reabastecendo os biscoitos");
 	}
 }
