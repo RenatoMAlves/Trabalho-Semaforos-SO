@@ -33,7 +33,7 @@ int main(){
 
 	for(;;){
 		semop(sem2, &P, 1);
-        *biscoitos = 10;
+        *biscoitos = 50;
 		puts("Reabastecendo os biscoitos");
 	}
 }

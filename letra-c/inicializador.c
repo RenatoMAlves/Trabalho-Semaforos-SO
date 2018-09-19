@@ -29,6 +29,8 @@ int main(){
 	// acoplamento do processo a zona de memória
 	biscoitos = shmat(idMem, 0, 0);
 	
+	*biscoitos = 50
+	
 	//printf("%d", *biscoitos);
 	
 	//shmctl(idMem, IPC_RMID, NULL);
