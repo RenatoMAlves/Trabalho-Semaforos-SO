@@ -1,8 +1,8 @@
 #Sistemas Operacionais
-##Semáforos
+## Semáforos
 Repositório contendo os códigos do trabalho matéria de Sistemas Operacionais dos cursos de *Ciência da Computação/Sistemas de Informação* do CEULP/ULBRA.
 
-###Questão 1
+### Questão 1
 
 Analise o programa a seguir e garanta a `exclusão mútua` nas áreas que podem gerar condição de corrida.
 
@@ -66,14 +66,14 @@ shmctl(idMem, IPC_RMID, NULL);
 }
 ```
 
-###Questão 2
+### Questão 2
 
 Escreva três programas concorrentes (cada processo deve executar uma rotina/função), `tratador`, `recebedor1` e `recebedor2`, que executam um loop infinito, e que sincronizam suas ações com o uso de semáforos (operações P e V). O processo tratador lê valores reais (double) digitados pelo usuário, que representam a temperatura de um certo dispositivo: se a temperatura lida é menor ou igual a 25 o recebedor1 deve ser notificado; se a temperatura lida for maior que 25 o recebedor2 deve ser notificado. O processo recebedor1 deverá imprimir “Temperatura baixa ou amena!” quando notificado pelo tratador. O processo recebedor2 deverá imprimir “Temperatura alta!” qu notificado pelo tratador.
 
 - Represente a utilização do semáforo simbolicamente com operações `P` e `V`.
 - Implemente a solução usando semáforos no Linux.
 
-###Questão 3
+### Questão 3
 
 Um grupo de alunos lancha em conjunto, retirando biscoitos de uma travessa que comporta até 50 biscoitos. Quando um aluno deseja comer um biscoito ele retira-o da travessa. Ao tentar pegar um biscoito, caso a travessa esteja vazia, o aluno acorda a cozinheira e espera até que esta tenha assado mais biscoitos e enchido a travessa. Considere que:
 
@@ -92,7 +92,7 @@ Um grupo de alunos lancha em conjunto, retirando biscoitos de uma travessa que c
 - todas as esperas devem ser bloqueantes, não podendo ocorrer o problema de Busy Waiting.
 
 
-###Questão 4
+### Questão 4
 
 Considere uma área de estacionamento com capacidade máxima para 20 carros. 
 Enquanto há lugares livres os carros podem entrar sem problemas. 
