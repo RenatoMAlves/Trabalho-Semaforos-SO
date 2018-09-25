@@ -1,4 +1,4 @@
-#Sistemas Operacionais
+# Sistemas Operacionais
 ## Semáforos
 Repositório contendo os códigos do trabalho matéria de Sistemas Operacionais dos cursos de *Ciência da Computação/Sistemas de Informação* do CEULP/ULBRA.
 
